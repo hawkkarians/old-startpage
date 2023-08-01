@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
 
 *{
     user-select: none;
-    font-family: 'Turret Road', cursive;
+    font-family: 'Handjet', cursive;
 }
 
 * :focus{
@@ -11,16 +12,15 @@
 
 :root{
     --base: #1a1b23;
-    --mantle: #1c2233;
+    --mantle: #eae7c9;
     --surface0: #363a4f;
-    --surface2: #c21d7d;
-    --text: #ff006a;
+    --surface2: #363a4f;
+    --text: #ff719e;
     --mauve: #ff719e;
     --lavender: #b7bdf8;
     --blue: #8aadf4;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
 
 body{
     background-color: var(--base);
@@ -28,7 +28,7 @@ body{
 }
 
 img{
-    width: 10%;
+    width: 25%;
     height: auto;
     margin-top: 10%;
     clip-path: circle(50% at 50% 50%);
@@ -52,7 +52,7 @@ h3{
     font-weight: bold;
     font-size: 20px;
     background: var(--mauve);
-    border-radius: 25px;
+    border-radius: 2px;
 }
 
 h1, h2{
@@ -68,7 +68,7 @@ h1, h2{
 }
 
 ul{
-    border-radius: 25px;
+    border-radius: 2px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -86,11 +86,11 @@ ul{
 a{
     color: var(--surface2);
     text-decoration: none;
+    font-size: 20px;
 }
 
 a:hover{
     color: var(--text);
-    font-weight: bold;
     cursor: pointer;
 }
 
@@ -99,38 +99,3 @@ a:focus{
     font-weight: bold;
 }
 
-form {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-form > input[type="text"] {
-  height: 30px;
-  width: 780px;
-  font-size: 20px;
-  color: var(--surface2);
-  background-color: var(--mantle);
-  padding-left: 13px;
-  margin: 15px;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-  border: 5px solid var(--mantle);
-  vertical-align: top;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-}
-
-.time{
-    color: #fffc42;
-}
-
-::placeholder { 
-    color: var(--surface2);
-    opacity: 1; 
-  }
